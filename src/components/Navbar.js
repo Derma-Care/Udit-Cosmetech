@@ -4,7 +4,7 @@ import {
   AiOutlineClose,
 } from "react-icons/ai";
 import "./Navbar.css";
-import logo from "../assets/pakricorn3.png";
+import logo from "../assets/11.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,17 +86,17 @@ const Navbar = () => {
                 onClick={() => scrollToSection("careers")}
                 className={`navLink ${activeSection === "careers" ? "active" : ""}`}
               >
-                Careers
+                NGK
               </button>
             </li>
-            <li>
+            {/* <li>
               <button
                 onClick={() => scrollToSection("portfolio")}
                 className={`navLink ${activeSection === "portfolio" ? "active" : ""}`}
               >
                 Portfolio
               </button>
-            </li>
+            </li> */}
             <li>
               <button
                 onClick={() => scrollToSection("contact")}

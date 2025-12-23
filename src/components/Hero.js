@@ -9,41 +9,46 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            Powering Digital Success with <span>Elite IT Talent</span>
+            Products & Services for <span>Life</span>
           </h1>
 
           <p className="hero-subtitle">
-            At <strong>Pakricorn Technologies</strong>, we help businesses scale
-            smarter, faster, and stronger. From startups to enterprises, we
-            connect you with <strong>expert engineers</strong> who make ideas a
-            reality.
+            Enabling <strong>Technology in Health & Cosmetic Arena</strong>
           </p>
 
           <p className="hero-subtitle">
-            Our expertise spans Software Development, Cloud Solutions, DevOps &
-            Automation, IT Staffing, Database Management, and Technical Support.
-            We deliver <strong>reliable, scalable solutions</strong> that
-            empower innovation and accelerate success.
+            <strong>UDIT CosmeTech Private Limited</strong> is a technology-driven
+            product development company revolutionizing healthcare and cosmetics
+            through innovation, research, and compassion. We design solutions
+            that enhance well-being, simplify lives, and promote sustainability.
           </p>
 
-          <div className="hero-buttons">
-            <a href="#contact" className="hero-btn primary">
-              Partner With Us
+          <p className="hero-subtitle">
+            From <strong>AI-powered skin diagnostics</strong> and advanced
+            dermatological research to impactful healthcare applications, we
+            bring <strong>global standards</strong> and
+            <strong> science-backed solutions</strong> to the Indian market with
+            a strong focus on safety, efficacy, and trust.
+          </p>
+
+          {/* <div className="hero-buttons">
+            <a  className="hero-btn primary">
+              Explore Our Solutions
             </a>
-            <a href="#services" className="hero-btn secondary">
-              Explore Services
+            <a  className="hero-btn secondary">
+              Research & Innovation
             </a>
-          </div>
+          </div> */}
 
           <div className="hero-stats">
             <div>
-              <span>10+</span> Years of Experience
+              <span>2023</span> Incorporated
             </div>
             <div>
-              <span>50+</span> Skilled IT Professionals
+              <span>2+</span> Flagship Applications
             </div>
             <div>
-              <span>100+</span> Successful Projects
+              <span>AI + R&D</span> Core Focus
             </div>
           </div>
         </div>

@@ -1,148 +1,150 @@
 import React from "react";
 import "./Careers.css";
-import {
-  FaUsers,
-  FaChartLine,
-  FaSmile,
-  FaLaptopCode,
-  FaServer,
-  FaMobileAlt,
-} from "react-icons/fa";
+
+const steps = [
+  {
+    step: "01",
+    title: "Welcome / Early Access",
+    description: (
+      <>
+        <p><strong>Welcome to Neeha’s GlowKart Early Access!</strong> ✨</p>
+        <ul>
+          <li>Enter your special GlowKart code</li>
+          <li>Fill your basic details</li>
+          <li>Spin the wheel & win exciting rewards 🎁</li>
+          <li>Share your delivery address</li>
+        </ul>
+        <p className="highlight">
+          Your surprise gift will reach you within <strong>7 days</strong>.
+        </p>
+      </>
+    ),
+  },
+  {
+    step: "02",
+    title: "Registration ID",
+    description: (
+      <>
+        <p>
+          Enter your <strong>NGK Registration ID</strong> in the given field.
+        </p>
+        <p>
+          Click on <strong>Verify</strong> to continue with registration.
+        </p>
+      </>
+    ),
+  },
+  {
+    step: "03",
+    title: "Basic Details",
+    description: (
+      <>
+        <p>Please enter your personal details carefully:</p>
+        <ul>
+          <li>Full Name (as per Aadhaar)</li>
+          <li>Mobile Number, Gender, DOB, City</li>
+          <li>12-digit Aadhaar number</li>
+          <li>Accept consent & privacy policy</li>
+        </ul>
+        <p className="sub-note">
+          Based on your dermatology history, you will see personalized questions.
+        </p>
+      </>
+    ),
+  },
+  {
+    step: "04",
+    title: "Verification & Spin",
+    description: (
+      <>
+        <p>Your details are under verification.</p>
+        <p>
+          While verification is in progress, you can
+          <strong> Spin & Win</strong> 🎉
+        </p>
+      </>
+    ),
+  },
+  {
+    step: "05",
+    title: "Spin & Win",
+    description: (
+      <>
+        <p>Tap the <strong>Spin</strong> button and win exciting brands:</p>
+        <div className="brands">
+          L’Oréal • MAC • Fenty • Sephora • Nykaa • Blue Heaven
+        </div>
+      </>
+    ),
+  },
+  {
+    step: "06",
+    title: "Congratulations",
+    description: (
+      <>
+        <p>🎉 Congratulations! You’ve won a premium GlowKart reward.</p>
+        <p>
+          Share your winning moment on
+          <strong> Instagram</strong> (optional).
+        </p>
+      </>
+    ),
+  },
+  {
+    step: "07",
+    title: "Delivery Address",
+    description: (
+      <>
+        <p>Enter your delivery address carefully.</p>
+        <p>
+          You can also tap <strong>Use Location</strong> to auto-fill your address.
+        </p>
+      </>
+    ),
+  },
+  {
+    step: "08",
+    title: "Final Success",
+    description: (
+      <>
+        <p className="final-title">
+          Welcome to Neeha’s GlowKart family! ✨
+        </p>
+        <p>
+          Your gift will be delivered within <strong>one week</strong>.
+        </p>
+        <p className="launch">
+          🚀 Launching on <strong>8th March 2026</strong>
+        </p>
+      </>
+    ),
+  },
+];
 
 const Careers = () => {
   return (
-    <section className="careers-section" id="careers">
-      <h2 className="careers-title" style={{ color: "#A93D01" }}>
-        Join Our <span>Team</span>
-      </h2>
-      <p className="careers-subtitle">
-        We believe in creating an inspiring workspace where innovation thrives,
-        ideas are valued, and people grow together.
-      </p>
-
-      {/* --- Culture and Growth Highlights --- */}
-      <div className="careers-culture">
-        <div className="culture-card">
-          <FaUsers className="culture-icon" />
-          <h3>Collaborative Culture</h3>
-          <p>
-            We believe great things happen when talented people collaborate.
-            Every voice matters, and every idea is valued.
-          </p>
-        </div>
-
-        <div className="culture-card">
-          <FaChartLine className="culture-icon" />
-          <h3>Career Growth</h3>
-          <p>
-            Learn, build, and grow with us. We empower every team member to take
-            ownership, upskill, and reach their full potential.
-          </p>
-        </div>
-
-        <div className="culture-card">
-          <FaSmile className="culture-icon" />
-          <h3>Work-Life Balance</h3>
-          <p>
-            We understand the importance of balance — flexibility and wellness
-            are at the core of our company values.
-          </p>
-        </div>
+    <section className="glowkart-container">
+      <div className="glowkart-header">
+        <h1>GlowKart Early Access Journey</h1>
+        <p>
+          Where beauty meets care, rewards, and a glow made just for you 💖
+        </p>
       </div>
 
-      {/* --- Current Openings Section --- */}
-      <div className="careers-openings">
-        <h2 className="careers-title" style={{ color: "#A93D01" }}>Current <span>Openings</span> </h2><br/>
-
-        <div className="openings-grid">
-          {/* Opening 1 */}
-          <div className="opening-card">
-            <div className="opening-header">
-              <FaLaptopCode className="opening-icon" />
-              <div>
-                <h4>Frontend Developer (React & Ionic)</h4>
-                <span className="opening-type">Full-Time · Remote / Hyderabad</span>
-              </div>
+      <div className="steps-wrapper">
+        {steps.map((item, index) => (
+          <div className="step-card" key={index}>
+            <div className="step-number">{item.step}</div>
+            <div className="step-content">
+              <h3>{item.title}</h3>
+              {item.description}
             </div>
-
-            <p className="opening-description">
-              We’re seeking a passionate Frontend Developer skilled in React and
-              Ionic to build beautiful, scalable, and high-performance web apps.
-            </p>
-
-            <div className="opening-details">
-              <div><strong>Experience:</strong> 1–3 years</div>
-              <div><strong>Skills:</strong> React, Ionic, TypeScript, REST APIs</div>
-            </div>
-
-            <a
-              href="mailto:support@pakricorn.com?subject=Application for Frontend Developer"
-              className="apply-btn"
-            >
-              Apply Now
-            </a>
           </div>
+        ))}
+      </div>
 
-          {/* Opening 2 */}
-          <div className="opening-card">
-            <div className="opening-header">
-              <FaServer className="opening-icon" />
-              <div>
-                <h4>Backend Developer (Node.js)</h4>
-                <span className="opening-type">Full-Time · Remote / Hyderabad</span>
-              </div>
-            </div>
-
-            <p className="opening-description">
-              Looking for an experienced Backend Developer to design APIs,
-              integrate databases, and ensure high-performance systems.
-            </p>
-
-            <div className="opening-details">
-              <div><strong>Experience:</strong> 2–4 years</div>
-              <div><strong>Skills:</strong> Node.js, MongoDB, Express, REST APIs</div>
-            </div>
-
-            <a
-              href="mailto:support@pakricorn.com?subject=Application for Backend Developer"
-              className="apply-btn"
-            >
-              Apply Now
-            </a>
-          </div>
-
-          {/* Opening 3 */}
-          <div className="opening-card">
-            <div className="opening-header">
-              <FaMobileAlt className="opening-icon" />
-              <div>
-                <h4>Mobile App Developer (Flutter)</h4>
-                <span className="opening-type">Full-Time · Remote / Hyderabad</span>
-              </div>
-            </div>
-
-            <p className="opening-description">
-              We’re hiring a Mobile Developer to create seamless cross-platform
-              apps using Flutter and ensure top-notch performance and UX.
-            </p>
-
-            <div className="opening-details">
-              <div><strong>Experience:</strong> 1–3 years</div>
-              <div><strong>Skills:</strong> Flutter, Dart, Firebase, REST APIs</div>
-            </div>
-
-            <a
-              href="mailto:support@pakricorn.com?subject=Application for Mobile App Developer"
-              className="apply-btn"
-            >
-              Apply Now
-            </a>
-          </div>
-        </div>
-
-        <p className="update-note">
-          Stay tuned! More opportunities coming soon.
-        </p>
+      <div className="closing-text">
+        ✨ Thank you for joining Neeha’s GlowKart ✨
       </div>
     </section>
   );

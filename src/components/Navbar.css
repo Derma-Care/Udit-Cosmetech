@@ -1,193 +1,140 @@
-/* ================================
-   GLOBAL RESET
+/* ===============================
+   RESET
 ================================ */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
-  background: linear-gradient(120deg, #89daf3 0%, #aefbff 100%);
-  color: #000;
-}
-
-/* ================================
-   HEADER / NAVBAR
+/* ===============================
+   FIXED HEADER
 ================================ */
 .header {
-  width: 100%;
-  background:  #e2ecff; /* translucent glass effect */
-  backdrop-filter: blur(10px);
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  position: sticky;
+  position: fixed;          /* 🔒 FIXED */
   top: 0;
-  z-index: 1000;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+  z-index: 1000;            /* 🔑 keeps above content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
+/* ===============================
+   HEADER CONTAINER
+================================ */
 .header-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 0 1.5rem;
-  position: relative;
 }
 
-/* ================================
-   LOGO
+/* ===============================
+   LOGO (LEFT CORNER)
 ================================ */
 .logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-margin-top: -10px;
-  width: 250px;
-  height: 55px;
-  border-radius: 8px;
-  overflow: hidden;
   cursor: pointer;
 }
 
 .logo-img {
-  width: 110%;
-  height: 100%;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
-  border: none;
-  box-shadow: none;
+  border-radius: 50%;
+  /* border: 2px solid #eaeaea; */
 }
 
-/* ================================
-   NAVIGATION LINKS
+/* ===============================
+   NAVBAR
 ================================ */
 .navBar {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  transition: right 0.4s ease-in-out;
+  margin-left: auto;
 }
 
+/* ===============================
+   NAV LIST
+================================ */
 .navLists {
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
- 
+  display: flex;
+  gap: 2rem;
 }
 
-.navLists li button {
+/* ===============================
+   NAV LINKS
+================================ */
+.navLink {
   background: none;
   border: none;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-  text-align: left;
-}
-
-/* === NAV LINKS === */
-.navLink {
-  text-decoration: none;
-  color: #FFFFFF;
   font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-.navLink:hover {
-  color: #F27A1A; /* Orange hover */
-}
-
-.navLink.active {
-  color: #F27A1A;
-  border-bottom: 2px solid #F27A1A;
   font-weight: 600;
-}
-
-/* ================================
-   DROPDOWN MENU
-================================ */
-.dropdown {
-  position: relative;
+  color: #333;
   cursor: pointer;
+  padding: 0.3rem 0;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.dropdown-toggle {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-weight: 500;
-  color: #FFFFFF;
+.navLink:hover,
+.navLink.active {
+  color: #0d6efd;
 }
 
-.dropdown-menu {
+/* underline */
+.navLink::after {
+  content: "";
   position: absolute;
-  top: 100%;
   left: 0;
-  margin-top: 12px;
-  border-radius: 8px;
-  overflow: hidden;
-  min-width: 180px;
-  background:  #e2ecff;/* dark teal overlay */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  z-index: 1000;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #0d6efd;
+  transition: width 0.3s ease;
 }
 
-.dropdown-menu li {
-  list-style: none;
+.navLink:hover::after,
+.navLink.active::after {
+  width: 100%;
 }
 
-.dropdown-link {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #FFFFFF;
-  font-weight: 500;
-  font-size: 0.9rem;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.dropdown-link:hover {
-  background-color: #F27A1A;
-  color: #FFFFFF;
-}
-
-/* ================================
+/* ===============================
    MOBILE MENU ICON
 ================================ */
 .mobileMenu {
   display: none;
   cursor: pointer;
-  font-size: 1.8rem;
-  margin-left: auto;
-  z-index: 1100;
-  color: #000;
+  color: #333;
 }
 
-/* ================================
-   RESPONSIVE DESIGN
+/* ===============================
+   TABLET & MOBILE
 ================================ */
-@media (max-width: 992px) {
+@media (max-width: 900px) {
+  .mobileMenu {
+    display: block;
+  }
+
   .navBar {
-    position: fixed;
-    top: 0;
+    position: fixed;                 /* 🔒 FIXED MENU */
+    top: 70px;                       /* below header */
     right: -100%;
-    height: 100vh;
     width: 260px;
-     background:  #e2ecff;
+    height: calc(100vh - 70px);
+    background: #ffffff;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5rem 2rem;
-    gap: 2rem;
-    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.2);
-    transition: right 0.4s ease-in-out;
+    padding: 2rem 1.5rem;
+    transition: right 0.3s ease;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.15);
+    z-index: 999;
   }
 
   .navBar.activeNavbar {
@@ -196,59 +143,31 @@ margin-top: -10px;
 
   .navLists {
     flex-direction: column;
-    gap: 1.5rem;
     width: 100%;
+    gap: 1.5rem;
   }
 
   .navLink {
-    color: #FFFFFF;
-    font-size: 1rem;
-  }
-
-  .navLink.active {
-    color: #F27A1A;
-    border: none;
-  }
-
-  .mobileMenu {
-    display: block;
-  }
-
-  .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    background: transparent;
-    border-radius: 0;
-    padding-left: 1rem;
-  }
-
-  .dropdown-link {
-    padding: 8px 0;
-    font-size: 0.9rem;
-    color: #FFFFFF;
-  }
-
-  .dropdown-link:hover {
-    color: #F27A1A;
+    width: 100%;
+    text-align: left;
+    font-size: 1.05rem;
   }
 }
 
-@media (max-width: 768px) {
+/* ===============================
+   SMALL PHONES
+================================ */
+@media (max-width: 480px) {
   .header-container {
     padding: 0 1rem;
   }
 
-  .navLink {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .navLink {
-    font-size: 0.85rem;
+  .logo-img {
+    width: 55px;
+    height: 55px;
   }
 
-  .dropdown-link {
-    font-size: 0.8rem;
+  .navBar {
+    width: 220px;
   }
 }
