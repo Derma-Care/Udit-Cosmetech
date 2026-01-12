@@ -293,14 +293,13 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about-section">
+      {/* <section className="about-section">
         <div className="about-container">
           <div className="about-content">
             <h2 className="about-title" style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}>
               Meet Our Team
             </h2>
 
-            {/* RIGHT CONTENT */}
             <div className="about-content">
               <ul className="about-list">
                 <li> Our team is a diverse group of talented professionals united by a shared vision to innovate and inspire.
@@ -324,18 +323,17 @@ const About = () => {
           </div>
 
         </div>
-      </section>
+      </section> */}
 
 
-      <section className="about-section">
+      {/* <section className="about-section">
         <div className="about-container reverse-mobile">
 
-          {/* LEFT IMAGE */}
           <div className="about-image">
              <img src={teamTech} alt="UDIT CosmeTech Technical Team Collaboration" />
           </div>
 
-          {/* RIGHT CONTENT */}
+
           <div className="about-content">
 
             <h2 className="about-title" style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}>
@@ -373,7 +371,7 @@ const About = () => {
 
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="about-section">
         <div className="about-container">
