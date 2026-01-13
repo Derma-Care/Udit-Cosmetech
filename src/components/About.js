@@ -10,13 +10,14 @@ import udit from '../assets/7.webp';
 import project from '../assets/8.webp';
 import teamTech from '../assets/9.webp';
 import team from '../assets/10.webp';
+import ngkVerificationImg from '../assets/NGK.jpeg'
 const About = () => {
   return (
     <>
-    <br/>
-    <br/>
+      <br />
+      <br />
       {/* ABOUT SECTION */}
-      <section className="about-section" id="about" style={{marginBottom:"-50px"}}>
+      <section className="about-section" id="about" style={{ marginBottom: "-50px" }}>
         <div className="about-container reverse-mobile">
           <div className="about-image">
             <img src={aboutImg} alt="Health and Cosmetic Technology" />
@@ -88,27 +89,27 @@ const About = () => {
 
             <ul className="about-text">
               <li>
-                Formulation Research:  Exploring beauty ingredients like snail mucin, fermented extracts, and Centella Asiatica,
+                <strong>Formulation Research: </strong>  Exploring beauty ingredients like snail mucin, fermented extracts, and Centella Asiatica,
                 adapting them for Indian skin types.
               </li>
               <li>
-                Diagnostic: Developing systems for VOC (Volatile Organic Compounds) analysis and skin imaging to detect underlying
+                <strong>Diagnostic:</strong>  Developing systems for VOC (Volatile Organic Compounds) analysis and skin imaging to detect underlying
                 diseases in various body organs.
               </li>
               <li>
-                Cosmetic Technologies: Exploring Ultherapy & HIFU (High-Intensity Focused Ultrasound) for non-invasive skin tightening and lifting.
+                <strong>Cosmetic Technologies: </strong> Exploring Ultherapy & HIFU (High-Intensity Focused Ultrasound) for non-invasive skin tightening and lifting.
               </li>
               <li>
                 Innovating in facial skin lifting & anti-aging solutions to enhance skin  elasticity and reduce wrinkles.
               </li>
               <li>
-                Consumer Behavior Analysis: Conducting market research to understand Indian consumer preferences and      skincare concerns.
+                <strong>Consumer Behavior Analysis:</strong>  Conducting market research to understand Indian consumer preferences and      skincare concerns.
               </li>
               <li>
-                Technology Integration: Developing AI-driven skin diagnostics and customized skincare recommendations through mobile applications.
+                <strong>Technology Integration:</strong>  Developing AI-driven skin diagnostics and customized skincare recommendations through mobile applications.
               </li>
-              <li>AI-Powered Skin Analysis: Developing AI-driven applications to analyze skin conditions and provide personalized beauty recommendations.</li>
-              <li>Sustainable & Clean Beauty: Researching eco-friendly packaging, natural preservatives, and cruelty-free alternatives for a sustainable future.</li>
+              <li><strong>AI-Powered Skin Analysis:</strong> Developing AI-driven applications to analyze skin conditions and provide personalized beauty recommendations.</li>
+              <li><strong>Sustainable & Clean Beauty:</strong> Researching eco-friendly packaging, natural preservatives, and cruelty-free alternatives for a sustainable future.</li>
             </ul>
           </div>
         </div>
@@ -292,6 +293,39 @@ const About = () => {
 
         </div>
       </section>
+
+      <section className="about-section">
+        <div className="about-container">
+          <div className="about-content">
+            <h2 className="about-title" style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}>
+              What We Do
+            </h2>
+            <p className="about-text">
+              At <strong>NGK</strong>, we focus on improving trust, safety, and clarity in the skincare and dermatology space.
+              We do this by verifying clinics and practitioners based on medical and safety standards.
+            </p>
+            <ul className="about-list">
+              <li>
+                <strong>NGK Verification & Compliance Framework:</strong>
+                <ul className="about-sublist">
+                  <li>  <strong>Clinic Verification:</strong> We verify dermatology and aesthetic clinics based on qualifications, compliance, hygiene, and treatment safety.</li>
+                  <li><strong>Qualification Validation:</strong>We ensure practitioners are medically trained, licensed, and follow ethical standards.</li>
+                  <li> <strong>Safety & Hygiene Checks:</strong>We audit sterilization, equipment handling, and safety practices to reduce treatment risks.</li>
+                  <li> <strong>Treatment Authenticity:</strong> We confirm the use of approved devices, evidence-based procedures, and medically guided treatments.</li>
+                  <li><strong>Patient Experience Review:</strong> We study patient feedback and outcomes to understand real clinic performance.</li>
+                  <li><strong>Consumer Guidance:</strong>We help consumers identify verified and trustworthy clinics without confusion or misinformation.</li>
+                  <li> <strong>Supporting Ethical Clinics:</strong> We highlight clinics that maintain proper standards and contribute to a safer skincare ecosystem.</li>
+                </ul>
+              </li></ul>
+          </div>
+
+          <div className="about-image">
+            <img src={ngkVerificationImg} alt="NGK Verification" />
+          </div>
+        </div>
+      </section>
+
+
 
       {/* <section className="about-section">
         <div className="about-container">
