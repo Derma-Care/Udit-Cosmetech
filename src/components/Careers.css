@@ -1,227 +1,179 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ===== ABOUT NGK SECTION ===== */
+
+.about-ngk-section {
+  padding: 80px 8%;
+  background: #fafafa;
 }
 
-.ngk-container {
-  font-family: "Poppins", sans-serif;
-  padding: 5rem 1.5rem;
-  background: linear-gradient(135deg, #fff8fb, #ffffff);
-  color: #1f1f1f;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.hero h1 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #d12984;
-}
-
-.hero p {
-  color: #555;
-  margin-top: 0.6rem;
-}
-
-/* ABOUT */
-.about-wrapper {
-  max-width: 900px;
-  margin: auto;
-  line-height: 1.7;
-  text-align: center;
-  margin-bottom: 4rem;
-  color: #444;
-}
-
-.about-wrapper h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #111;
-}
-
-/* JOURNEY */
-.journey-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.journey-header h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #d12984;
-}
-
-.journey-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.journey-card {
-  background: #ffffff;
-  padding: 1.8rem;
-  border-radius: 20px;
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
-  transition: 0.3s ease;
-}
-
-.journey-card:hover {
-  transform: translateY(-4px);
-}
-
-.badge {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #ff77a1, #ffb782);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 1rem;
-}
-
-.journey-card h3 {
-  margin-bottom: 0.8rem;
-}
-
-.content ul {
-  padding-left: 1.2rem;
-  margin-top: 0.4rem;
-}
-
-.brand-list {
-  margin-top: 0.6rem;
-  font-weight: 600;
-  color: #d12984;
-}
-
-.final-title {
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.launch {
-  margin-top: 0.3rem;
-  color: #444;
-  font-weight: 600;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  margin-top: 4rem;
-  font-weight: 600;
-  color: #d12984;
-}
-
-.ngk-about {
-  background: linear-gradient(135deg, #fff8fb, #ffffff);
-  font-family: "Poppins", sans-serif;
-}
-
-.ngk-about .container {
-  max-width: 1180px;
-  margin: auto;
-  padding: 0 32px;
-}
-
-.ngk-about .title {
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  color: #0a192f;
-  margin-bottom: 22px;
-}
-
-.ngk-about .intro {
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.7;
-  color: #233554;
-  max-width: 900px;
-  margin: 0 auto 48px auto;
-}
-
-.ngk-about .grid {
+.about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px 60px;
-  align-items: start;
-}
-
-.ngk-about .desc {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #3b4a5d;
-  margin-bottom: 22px;
-}
-
-.ngk-about .pillars {
-  list-style: none;
-  padding: 0;
-  margin-top: 8px;
-}
-
-.ngk-about .pillars li {
-  display: flex;
+  gap: 60px;
   align-items: center;
-  gap: 10px;
-  padding: 8px 0;
-  color: #0a192f;
-  font-size: 15.5px;
 }
 
-.ngk-about .pillars li svg {
-  color: #0076b5;
+.about-tag {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c3aed;
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.about-title span {
+  color: #7c3aed;
+}
+
+.about-desc {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* TAGS */
+
+.about-tags {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pink {
+  background: #ffe4f1;
+  color: #ec4899;
+}
+
+.green {
+  background: #e7f9ed;
+  color: #22c55e;
+}
+
+.purple {
+  background: #f3e8ff;
+  color: #8b5cf6;
+}
+
+.gold {
+  background: #fff4e5;
+  color: #f59e0b;
+}
+
+/* BUTTON */
+
+.view-details-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.view-details-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+}
+
+/* IMAGE */
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ===== FEATURES SECTION ===== */
+
+.features-section {
+  padding: 80px 8%;
+  background: white;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.feature-card {
+  padding: 30px;
+  border-radius: 14px;
+  background: #fafafa;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.feature-card h3 {
+  margin: 15px 0 10px;
   font-size: 18px;
 }
 
-.ngk-about .highlight {
-  background: white;
-  border-left: 4px solid #0076b5;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
-  border-radius: 6px;
-  padding: 18px 24px;
-  font-weight: 600;
-  color: #0a192f;
-  margin-top: 10px;
+.feature-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
 }
 
-.ngk-about .closing {
-  font-size: 17px;
-  text-align: center;
-  line-height: 1.7;
-  max-width: 900px;
-  color: #233554;
-  margin: 52px auto 0 auto;
+/* ICON */
+
+.icon {
+  width: 36px;
+  height: 36px;
 }
 
-/* MOBILE FIX */
-@media (max-width: 900px) {
-  .ngk-about .grid {
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .features-grid {
     grid-template-columns: 1fr;
   }
 
-  .ngk-about .title {
-    font-size: 30px;
-  }
-}
-
-/* RESPONSIVE */
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 1.9rem;
+  .about-ngk-section,
+  .features-section {
+    padding: 60px 20px;
   }
 
-  .about-wrapper h2,
-  .journey-header h2 {
-    font-size: 1.8rem;
+  .about-title {
+    font-size: 26px;
   }
+
 }

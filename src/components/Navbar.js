@@ -23,7 +23,7 @@ const Navbar = () => {
   // Update active link while scrolling
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "services","careers", "portfolio", "contact"];
+      const sections = ["home", "about", "services", "careers", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach((section) => {
@@ -50,12 +50,12 @@ const Navbar = () => {
       <div className="header-container">
         {/* Logo */}
         <div className="logo" onClick={() => scrollToSection("home")}>
-         <img src={logo} alt="Logo" className="logo-img" />
+          <img src={logo} alt="Logo" className="logo-img" />
 
         </div>
 
         {/* Navbar */}
-        <nav className={`navBar ${isOpen ? "activeNavbar" : ""}`} style={{fontWeight:"bold"}}>
+        <nav className={`navBar ${isOpen ? "activeNavbar" : ""}`} style={{ fontWeight: "bold" }}>
           <ul className="navLists">
             <li>
               <button
@@ -81,22 +81,24 @@ const Navbar = () => {
                 Services
               </button>
             </li>
-              <li>
+            <li>
               <button
                 onClick={() => scrollToSection("careers")}
                 className={`navLink ${activeSection === "careers" ? "active" : ""}`}
               >
-                NGK
+               About NGK
               </button>
             </li>
-            {/* <li>
-              <button
-                onClick={() => scrollToSection("portfolio")}
-                className={`navLink ${activeSection === "portfolio" ? "active" : ""}`}
+            <li>
+              <a
+                href="https://ngkderma.uditcosmetech.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="navLink"
               >
-                Portfolio
-              </button>
-            </li> */}
+                Explore NGK
+              </a>
+            </li>
             <li>
               <button
                 onClick={() => scrollToSection("contact")}

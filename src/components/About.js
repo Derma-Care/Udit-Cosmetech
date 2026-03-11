@@ -76,7 +76,7 @@ const About = () => {
             <h2 className="about-title" style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}>Research & Innovation</h2>
 
             <ul>
-              <li>At UDIT CosmeTech, we are deeply invested in research and innovation within the cosmetic industry.
+              <li className="about-text">At UDIT CosmeTech, we are deeply invested in research and innovation within the cosmetic industry.
                 Our team is actively exploring cutting-edge skincare formulations, advanced dermatological solutions,
                 and sustainable cosmetic technologies to align with global standards. We are actively conducting research
                 in the cosmetic industry to understand emerging trends, regulatory standards, and consumer preferences. Our
@@ -159,7 +159,7 @@ const About = () => {
             </h2>
 
             <p className="about-text">
-              At <strong>UDIT CosmeTech</strong>, we are currently working on two
+              At <strong>UDIT CosmeTech</strong>, we are currently working on three
               groundbreaking applications that exemplify our dedication to
               innovation and community impact.
             </p>
@@ -254,7 +254,62 @@ const About = () => {
         </div>
       </section>
 
+      <section className="about-section">
+        <div className="about-container">
+          <div className="about-content">
 
+            <h2
+              className="about-title"
+              style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}
+            >
+              Book Verified <span style={{ color: "#ff3b73" }}>Skin Clinics</span> Near You
+            </h2>
+
+            <p className="about-text">
+              <strong>NGK</strong> connects you to <strong>verified clinics</strong> for skin procedures —
+              with exclusive discounts, genuine patient reviews, and seamless appointment
+              booking directly from your phone.
+            </p>
+
+            <ul className="about-list">
+              <li>
+                <strong>Verified Clinics</strong>
+                <ul className="about-sublist">
+                  <li>
+                    We verify dermatology and aesthetic clinics based on qualifications,
+                    hygiene standards, safety protocols, and treatment reliability.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Exclusive Discounts on Skin Procedures</strong>
+                <ul className="about-sublist">
+                  <li>
+                    Access special discounts and offers on popular skin treatments from
+                    trusted clinics near you.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Easy App Booking – Anytime, Anywhere</strong>
+                <ul className="about-sublist">
+                  <li>
+                    Book consultations and treatments easily through the NGK platform
+                    anytime from your mobile device.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+
+          <div className="about-image">
+            <img src={ngkVerificationImg} alt="NGK Verified Clinics" />
+          </div>
+        </div>
+      </section>
       <section className="about-section">
         <div className="about-container reverse-mobile">
 
@@ -266,146 +321,67 @@ const About = () => {
           {/* RIGHT CONTENT */}
           <div className="about-content">
 
-            <h2 className="about-title" style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}>
+            <h2
+              className="about-title"
+              style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}
+            >
               At UDIT Cosmetech,
             </h2>
 
             <p className="about-text">
-              We’re not just building applications—we’re creating solutions that make a difference. Here’s why our approach stands out:
+              We’re not just building applications—we’re creating solutions that make a difference.
+              Here’s why our approach stands out:
             </p>
 
-            <ul>
-              <li>
-                <strong>Innovative Thinking:</strong> Our products are designed using cutting-edge technologies to address real-world problems effectively.
-              </li>
-              <li>
-                <strong>Empathy-Driven Solutions:</strong> We develop applications that prioritize the needs and well-being of our users.
-              </li>
-              <li>
-                <strong>High-Quality Standards: </strong>  Every product we deliver is rigorously tested and crafted to meet industry-leading standards.
-              </li>
-              <li>
-                <strong>Sustainability and Community Impact:</strong> We focus on solutions that promote sustainability, inclusion, and a sense of community.
-              </li>
-            </ul><br />
-            <p>By focusing on the intersection of technology and humanity, we ensure our products have a lasting and meaningful impact on society.</p>
-          </div>
-
-        </div>
-      </section>
-
-      <section className="about-section">
-        <div className="about-container">
-          <div className="about-content">
-            <h2 className="about-title" style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}>
-              What We Do
-            </h2>
-            <p className="about-text">
-              At <strong>NGK</strong>, we focus on improving trust, safety, and clarity in the skincare and dermatology space.
-              We do this by verifying clinics and practitioners based on medical and safety standards.
-            </p>
             <ul className="about-list">
+
               <li>
-                <strong>NGK Verification & Compliance Framework:</strong>
-                <ul className="about-sublist">
-                  <li>  <strong>Clinic Verification:</strong> We verify dermatology and aesthetic clinics based on qualifications, compliance, hygiene, and treatment safety.</li>
-                  <li><strong>Qualification Validation:</strong>We ensure practitioners are medically trained, licensed, and follow ethical standards.</li>
-                  <li> <strong>Safety & Hygiene Checks:</strong>We audit sterilization, equipment handling, and safety practices to reduce treatment risks.</li>
-                  <li> <strong>Treatment Authenticity:</strong> We confirm the use of approved devices, evidence-based procedures, and medically guided treatments.</li>
-                  <li><strong>Patient Experience Review:</strong> We study patient feedback and outcomes to understand real clinic performance.</li>
-                  <li><strong>Consumer Guidance:</strong>We help consumers identify verified and trustworthy clinics without confusion or misinformation.</li>
-                  <li> <strong>Supporting Ethical Clinics:</strong> We highlight clinics that maintain proper standards and contribute to a safer skincare ecosystem.</li>
-                </ul>
-              </li></ul>
-          </div>
-
-          <div className="about-image">
-            <img src={ngkVerificationImg} alt="NGK Verification" />
-          </div>
-        </div>
-      </section>
-
-
-
-      {/* <section className="about-section">
-        <div className="about-container">
-          <div className="about-content">
-            <h2 className="about-title" style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}>
-              Meet Our Team
-            </h2>
-
-            <div className="about-content">
-              <ul className="about-list">
-                <li> Our team is a diverse group of talented professionals united by a shared vision to innovate and inspire.
-                  With expertise spanning software development, healthcare, and cosmetics, we bring a wealth of knowledge and
-                  creativity to the table. Collaboration, continuous learning, and a passion for problem-solving drive us to
-                  achieve excellence every day.</li>
-                <li>
-                  <strong>Leadership and Vision:</strong> Guided by experienced leaders who prioritize innovation and customer satisfaction.</li>
-                <li>
-                  <strong>Expert Development Teams:</strong> Skilled professionals dedicated to creating user-friendly and impactful applications.
-                </li>
-                <li>
-                  <strong>Commitment to Growth:</strong> A culture that fosters innovation, encourages feedback, and prioritizes customer success.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="about-image ">
-            <img src={project} alt="UDIT CosmeTech Team Collaboration" />
-          </div>
-
-        </div>
-      </section> */}
-
-
-      {/* <section className="about-section">
-        <div className="about-container reverse-mobile">
-
-          <div className="about-image">
-             <img src={teamTech} alt="UDIT CosmeTech Technical Team Collaboration" />
-          </div>
-
-
-          <div className="about-content">
-
-            <h2 className="about-title" style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}>
-              Meet Our Team
-            </h2>
-
-
-            <ul className="about-list">
-              <li>
-                <strong>Technical Expertise:</strong>Our team specializes in:
+                <strong>Innovative Thinking:</strong>
                 <ul className="about-sublist">
                   <li>
-                    <strong>Java Full Stack Development</strong>
+                    Our products are designed using cutting-edge technologies to address real-world problems effectively.
                   </li>
-                  <li>
-                    <strong>Cloud Technologies</strong>
-                  </li>
-                  <li>
-                    <strong>MongoDB & SQL Databases</strong>
-                  </li>
-                  <li>
-                    <strong>Microservices Architecture</strong>
-                  </li>
-                  <li>
-                    <strong>QA Automation:</strong> Proficiency in tools like
-                    <strong>Selenium,PlayWright and Cypress</strong>
-                  </li>
-                  <li>
-                    <strong>DevOps Practices:</strong> Expertise in CI/CD pipelines, containerization, and orchestration tools.
-                  </li>
-
                 </ul>
               </li>
+
+              <li>
+                <strong>Empathy-Driven Solutions:</strong>
+                <ul className="about-sublist">
+                  <li>
+                    We develop applications that prioritize the needs and well-being of our users.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>High-Quality Standards:</strong>
+                <ul className="about-sublist">
+                  <li>
+                    Every product we deliver is rigorously tested and crafted to meet industry-leading standards.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Sustainability and Community Impact:</strong>
+                <ul className="about-sublist">
+                  <li>
+                    We focus on solutions that promote sustainability, inclusion, and a sense of community.
+                  </li>
+                </ul>
+              </li>
+
             </ul>
 
+            <p className="about-text">
+              By focusing on the intersection of technology and humanity, we ensure our products
+              have a lasting and meaningful impact on society.
+            </p>
+
           </div>
         </div>
-      </section> */}
+      </section>
+
 
       <section className="about-section">
         <div className="about-container">
@@ -417,17 +393,17 @@ const About = () => {
             {/* RIGHT CONTENT */}
             <div className="about-content">
               <ul className="about-list">
-
-                <li>
-                  As we continue to expand our footprint in the Health and Cosmetic domains, we invite you to be part of our journey.
-                  Whether you're a healthcare professional, a tech enthusiast, or someone looking
-                  to make a positive impact, UDIT CosmeTech welcomes you to collaborate and innovate with us.</li>
-                <li>
-                  Explore our applications, connect with us, and see how UDIT CosmeTech is transforming lives,
-                  fostering sustainability, and building a brighter future for all.
-                  Together, we can create a healthier, more connected, and inclusive world.
-                </li>
-
+                <ul className="about-sublist">
+                  <li>
+                    As we continue to expand our footprint in the Health and Cosmetic domains, we invite you to be part of our journey.
+                    Whether you're a healthcare professional, a tech enthusiast, or someone looking
+                    to make a positive impact, UDIT CosmeTech welcomes you to collaborate and innovate with us.</li>
+                  <li>
+                    Explore our applications, connect with us, and see how UDIT CosmeTech is transforming lives,
+                    fostering sustainability, and building a brighter future for all.
+                    Together, we can create a healthier, more connected, and inclusive world.
+                  </li>
+                </ul>
               </ul>
             </div>
           </div>

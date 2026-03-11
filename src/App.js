@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Careers from "./components/Careers";
 import "./App.css";
@@ -24,9 +23,7 @@ const App = () => {
       <section id="careers">
         <Careers />
       </section>
-      {/* <section id="portfolio">
-        <Portfolio />
-      </section> */}
+    
       <section id="contact">
         <Contact />
       </section>
