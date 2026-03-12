@@ -11,6 +11,7 @@ import project from '../assets/8.webp';
 import teamTech from '../assets/9.webp';
 import team from '../assets/10.webp';
 import ngkVerificationImg from '../assets/NGK.jpeg'
+import { Shield, BadgeCheck, Smartphone, Building2 } from "lucide-react";
 const About = () => {
   return (
     <>
@@ -33,7 +34,7 @@ const About = () => {
                 UDIT CosmeTech Private Limited
               </strong>
 
-              Incorporated on <strong>August 15, 2023</strong>, UDIT CosmeTech is a product
+              Incorporated on <strong>August 16, 2023</strong>, UDIT CosmeTech is a product
               development company specializing in the <strong>Health and Cosmetic </strong>
               domains with innovation at the heart of everything we do, we strive to develop cutting-edge
               applications that simplify lives, enhance well-being, and foster sustainable practices in healthcare and cosmetics.
@@ -214,12 +215,9 @@ const About = () => {
 
             {/* RIGHT CONTENT */}
             <div className="about-content">
-              <p className="about-text">
-                At UDIT CosmeTech, we are currently working on two ground breaking applications that exemplify our
-                dedication to innovation and community impact:
-              </p>
+
               <h4 className="app-title">
-                1. SureCare Application
+                2. SureCare Application
               </h4>
               <p className="about-text">
                 The SureCare App is designed to revolutionize nurse care and geriatric services. It provides a comprehensive
@@ -253,61 +251,97 @@ const About = () => {
           </div>
         </div>
       </section>
-
+       
       <section className="about-section">
-        <div className="about-container">
-          <div className="about-content">
+        <div className="about-grid">
 
-            <h2
+          {/* LEFT TEXT */}
+          <div className="about-text">
+            <p className="about-tag">ABOUT NGK</p>
+
+            <h1
               className="about-title"
-              style={{ color: "#7a7a7a", textAlign: "center", fontSize: "50px" }}
+              style={{ textAlign: "center", color: "#7a7a7a", fontSize: "50px" }}
             >
-              Book Verified <span style={{ color: "#ff3b73" }}>Skin Clinics</span> Near You
-            </h2>
+              India's Premier <br />
+              <span style={{ color: "#ff3b73" }}>Dermatology Booking</span> Platform
+            </h1>
 
-            <p className="about-text">
-              <strong>NGK</strong> connects you to <strong>verified clinics</strong> for skin procedures —
-              with exclusive discounts, genuine patient reviews, and seamless appointment
-              booking directly from your phone.
+            <p className="about-desc">
+              An integral unit of <strong>UDIT Cosmetech Pvt. Ltd.</strong> — NGK is a
+              smart platform that bridges the gap between patients seeking quality skin
+              care and the best verified dermatology clinics in your city.
             </p>
 
-            <ul className="about-list">
-              <li>
-                <strong>Verified Clinics</strong>
-                <ul className="about-sublist">
-                  <li>
-                    We verify dermatology and aesthetic clinics based on qualifications,
-                    hygiene standards, safety protocols, and treatment reliability.
-                  </li>
-                </ul>
-              </li>
+            <p className="about-desc">
+              Whether you need a HydraFacial, laser treatment, acne procedure, or skin
+              consultation — NGK finds you a certified clinic, guarantees an exclusive
+              discount, and lets you book in seconds from your phone.
+            </p>
 
-              <li>
-                <strong>Exclusive Discounts on Skin Procedures</strong>
-                <ul className="about-sublist">
-                  <li>
-                    Access special discounts and offers on popular skin treatments from
-                    trusted clinics near you.
-                  </li>
-                </ul>
-              </li>
+            <div className="about-tags">
+              <span className="tag pink">For Patients</span>
+              <span className="tag green">For Clinics</span>
+              <span className="tag purple">Verified</span>
+              <span className="tag gold">Best Discounts</span>
+            </div>
 
-              <li>
-                <strong>Easy App Booking – Anytime, Anywhere</strong>
-                <ul className="about-sublist">
-                  <li>
-                    Book consultations and treatments easily through the NGK platform
-                    anytime from your mobile device.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
+            <a
+              href="https://ngkderma.uditcosmetech.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="view-details-btn"
+            >
+              Explore NGK
+            </a>
           </div>
 
+          {/* RIGHT IMAGE */}
           <div className="about-image">
             <img src={ngkVerificationImg} alt="NGK Verified Clinics" />
           </div>
+
+        </div>
+      </section>
+      <section className="features-section">
+        <div className="features-grid">
+
+          <div className="feature-card">
+            <Shield className="icon green" />
+            <h3>Verified Clinics Only</h3>
+            <p>
+              Every clinic on NGK is verified, licensed, and background-checked.
+              No unqualified providers, ever.
+            </p>
+          </div>
+
+          <div className="feature-card">
+            <BadgeCheck className="icon pink" />
+            <h3>Genuine Users</h3>
+            <p>
+              NGK ensures clinics receive only verified, genuine users —
+              reducing no-shows and fake bookings.
+            </p>
+          </div>
+
+          <div className="feature-card">
+            <Smartphone className="icon purple" />
+            <h3>User Mobile App</h3>
+            <p>
+              A beautiful, easy-to-use mobile app for users to discover clinics,
+              book procedures, and track appointments.
+            </p>
+          </div>
+
+          <div className="feature-card">
+            <Building2 className="icon gold" />
+            <h3>Clinic Web Application</h3>
+            <p>
+              A powerful web dashboard for clinics to manage appointments,
+              view patients, track earnings, and grow their business.
+            </p>
+          </div>
+
         </div>
       </section>
       <section className="about-section">

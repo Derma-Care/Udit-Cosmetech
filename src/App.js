@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-import Careers from "./components/Careers";
+
 import "./App.css";
 
 const App = () => {
@@ -20,9 +20,7 @@ const App = () => {
       <section id="services">
         <Services />
       </section>
-      <section id="careers">
-        <Careers />
-      </section>
+   
     
       <section id="contact">
         <Contact />

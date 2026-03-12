@@ -23,7 +23,7 @@ const Navbar = () => {
   // Update active link while scrolling
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "services", "careers", "contact"];
+      const sections = ["home", "about", "services", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach((section) => {
@@ -81,14 +81,7 @@ const Navbar = () => {
                 Services
               </button>
             </li>
-            <li>
-              <button
-                onClick={() => scrollToSection("careers")}
-                className={`navLink ${activeSection === "careers" ? "active" : ""}`}
-              >
-               About NGK
-              </button>
-            </li>
+           
             <li>
               <a
                 href="https://ngkderma.uditcosmetech.com/"
